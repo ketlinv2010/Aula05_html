@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de seletores</title>
+
+    <style>
+
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        #tituloPrincipal{
+            background-color: rgb(127, 190, 109);
+            color: white;
+            font-size: 25px;
+            text-align: center;   
+        }
+        p {
+            background-color: rgb(162, 226, 142);
+            font-size: 14px;
+            font-weight:50 ;
+        }
+        .titulo{
+            color: rgb(63, 99, 53);
+            font-size: 25px;
+            margin:0;
+            padding: 0;
+        }
+
+        pre{
+            background-color: rgb(214, 255, 204);
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header >
+        <br>
+        <h1 id="tituloPrincipal">Tipos de seletores</h1>
+        <br>
+    </header>
+
+    <main>
+
+        <section>
+            <hr>
+            <h3 class="titulo">Seletor de atributo</h3>
+            <p>Permitem estilizar elementos com base na presença de um atributo 
+                ou no valor específico desse atributo.
+            </p>
+            <pre>
+               input[required] (seleciona inputs que têm o atributo required). 
+            </pre>
+            <hr>
+        </section>
+
+
+        <section>
+            <h3 class="titulo">Seletor Descendente</h3>
+            <p>É representado pelo espaço em branco entre dois ou 
+                mais seletores, seleciona todos os elementos que são descendentes de 
+                um elemento ancestral específico.
+            </p>
+            <pre>
+                ancestral descendente {
+                    propriedade: valor;
+                }
+            </pre>
+            <hr>
+        </section>
+
+        <section>
+            <h3 class="titulo">Seletor Filho Direto</h3>
+            <p>
+                É representado pelo sinal maior que e serve para estilizar
+                apenas os elementos que são filhos imediatos de um elemento pai
+                ignorando netos ou outros.
+            </p>
+            <pre>
+            pai > filho {
+                propriedade: valor;
+            }
+            </pre>
+            <hr>
+        </section>
+
+
+        <section>
+            <h3 class="titulo">Seletor Adjacente Direto</h3>
+            <p>
+                É representado pelo sinal de mais e serve para selecionar um elemento
+                que vem imediatamente após outro elemento específico
+            </p>
+            <pre>
+                elemento1 + elemento2 {
+                    /* estilos aqui */
+                }
+            </pre>
+            <hr>
+        </section>
+
+        <section>
+            <h3 class="titulo">Seletor Irmão Gerais</h3>
+            <p>
+                É representado pelo símbolo de til, ele seleciona todos os 
+                elementos que aparecem depois de um elemento específico e 
+                comparilham o mesmo elemento pai.
+            </p>
+            <pre>elemento1 ~ elemento2 {
+                    /* propriedades CSS */
+                }
+            </pre>
+            <hr>
+        </section>
+
+        <section>
+            <h3 class="titulo">Seletor de Pseudoclasse</h3>
+            <p>
+                É uma palavra-chave adicionada a um seletor que define o estilo
+                de um elemento baseado em um estado específico ou em sua posição
+                na página.
+            </p>
+            <pre>
+                seletor:pseudoclasse {
+                propriedade: valor;
+                }
+            </pre>
+            <hr>
+        </section>
+
+
+        <section>
+            <h3 class="titulo">Seletor de Pseudoelemento</h3>
+            <p>É uma palavra-chave adicionada a um seletor que permite estilizar uma parte
+                específica ou criar elementos virtuais.
+            </p>
+            <pre>
+                seletor::pseudo-elemento {
+                    propriedade: valor;
+                }
+            </pre>
+            <hr>
+        </section>
+    </main>
+</body>
+</html>
